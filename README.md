@@ -1,13 +1,3 @@
-Great, I'll dive into how to boot a llamafile directly from USB using Cosmopolitan libc in metal mode. I'll look into:
-
-- Specific build flags and configurations required for metal mode
-- How to create bootable APE executables from the llamafile GitHub repo
-- Support for both UEFI and BIOS boot targets
-- x86_64 and ARM compatibility considerations
-- Debugging techniques for bare-metal boot issues
-
-I'll also include a step-by-step guide based on the findings and reference working examples where available. I'll let you know when everything is ready!
-
 # Booting a Cosmopolitan "llamafile" on Bare Metal from USB
 
 **Overview:** *Using Cosmopolitan Libc's "metal" mode, you can compile a **llamafile** (a self-contained LLM binary) into a bootable format that runs directly on hardware without an OS. This guide covers building the binary with Cosmopolitan, adding BIOS and UEFI boot support, preparing a USB stick, and addressing x86_64 vs ARM64 differences. It also provides debugging tips and examples of Cosmopolitan's bare-metal mode in action.* 
@@ -224,5 +214,3 @@ To ensure your bootable llamafile works properly, follow these testing steps:
 This project is provided as-is under the MIT License. Contributions are welcome - please feel free to submit issues or pull requests to improve the scripts or documentation.
 
 ---
-
-With these tools and instructions, you should be able to create a bootable llamafile that runs directly on hardware without an operating system. Remember that running in metal mode has limitations, but it demonstrates the impressive capabilities of Cosmopolitan libc and the portability of llamafile.
